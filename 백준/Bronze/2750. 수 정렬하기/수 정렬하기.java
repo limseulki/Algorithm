@@ -23,12 +23,12 @@ public class Main {
     public static void sort(int N, int[] arr) {
         int temp;
 
-        for(int j = 0; j < N-1; j++) {
-            for (int i = 0; i < N-1; i++) {
-                if (arr[i] > arr[i+1]) {
-                    temp = arr[i];
-                    arr[i] = arr[i+1];
-                    arr[i + 1] = temp;
+        for(int i = N-1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+                if (arr[j] > arr[j+1]) {
+                    temp = arr[j];
+                    arr[j] = arr[j+1];
+                    arr[j+1] = temp;
                 }
             }
         }
