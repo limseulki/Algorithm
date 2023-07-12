@@ -5,17 +5,19 @@ import java.io.InputStreamReader;
 public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        StringBuilder sb = new StringBuilder();
 
         int N = Integer.parseInt(br.readLine());
 
         for(int i = 0; i < N; i++) {
             for(int k = 0; k < i; k++) {
-                System.out.print(" ");
+                sb.append(" ");
             }
             for(int j = N-i; j > 0; j--) {
-                System.out.print("*");
+                sb.append("*");
             }
-            System.out.println();
+            sb.append("\n");
         }
+        System.out.println(sb);
     }
 }
