@@ -2,8 +2,8 @@ import java.lang.*;
 import java.math.*;
 
 class Solution {
-    public BigInteger solution(int balls, int share) {
-        
+    public int solution(int balls, int share) {
+        int answer = 0;
         BigInteger n = BigInteger.ONE;
         BigInteger m = BigInteger.ONE;
         long select1 = balls-share > share ? balls-share : share;
@@ -17,6 +17,8 @@ class Solution {
             m = m.multiply(BigInteger.valueOf(i));
         }
         
-        return n.divide(m);
+        answer = n.divide(m).intValue();
+        
+        return answer;
     }
 }
