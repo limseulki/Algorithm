@@ -13,7 +13,7 @@ class Solution {
             n = n.multiply(BigInteger.valueOf(i));
         }
             
-        for(long i = 2L; i <= select2; i++) {
+        for(long i = 1; i <= select2; i++) {
             m = m.multiply(BigInteger.valueOf(i));
         }
         
