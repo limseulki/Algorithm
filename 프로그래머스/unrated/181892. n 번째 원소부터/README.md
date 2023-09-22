@@ -1,10 +1,10 @@
 # [unrated] n 번째 원소부터 - 181892 
 
-[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181892#qna) 
+[문제 링크](https://school.programmers.co.kr/learn/courses/30/lessons/181892) 
 
 ### 성능 요약
 
-메모리: 64.4 MB, 시간: 0.02 ms
+메모리: 76.5 MB, 시간: 0.04 ms
 
 ### 구분
 
